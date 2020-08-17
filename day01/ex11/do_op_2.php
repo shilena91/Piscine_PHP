@@ -1,6 +1,14 @@
 #!/usr/bin/php
 <?php
 
+/*
+** This time, your program will receive only one argument.
+** It will contain the whole calculation that needs to be done.
+** It will always be under the format of number - operator - number.
+** A new error message ``Syntax Error'' will now complete the prior message in case the syntax isn’t correct.
+** There can be either zero or multiple spaces between the numbers and the operator. The expected result is the same.
+*/
+
 if ($argc != 2) {
     echo 'Incorrect Parameters' . "\n";
     return;

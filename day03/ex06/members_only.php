@@ -1,5 +1,12 @@
 <?php
 
+/*
+** Create a file members_only.php that will require a login/password at the HTTP protocol level.
+** If the login is "zaz" and the password is "Ilovemylittleponey",
+** the response must be an HTML page that contains an img tag which source is directly the image "/img/42.png".
+** You must not provide the image URL
+*/
+
 $user = $_SERVER['PHP_AUTH_USER'];
 $password = $_SERVER['PHP_AUTH_PW'];
 

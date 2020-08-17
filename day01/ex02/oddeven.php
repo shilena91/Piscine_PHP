@@ -1,5 +1,11 @@
 #!/usr/bin/php
+
 <?php
+
+/*
+** Create a program in PHP that will kindly ask the user for a pile number,
+** and that will inform them if it’s even (therefore washed with Olympia) or if it's odd.
+*/
 
 function display_error($data) {
     echo '\'' . $data . '\' is not a number' . "\n";

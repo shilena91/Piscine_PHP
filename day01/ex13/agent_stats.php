@@ -33,6 +33,8 @@ while (1) {
         $data[$login]['grade_by_peers'][] = $grade;
 }
 
+// calculate the average grade given by peers
+
 function ft_average($data) {
     $data = array_reduce($data, function ($acc, $cur) {
         return array_merge($acc, $cur['grade_by_peers']);
@@ -42,6 +44,8 @@ function ft_average($data) {
     $res = $sum / $len;
     echo $res . "\n";
 }
+
+// calculate the average grade given by peers per user ordered by alphabetical order.
 
 function ft_average_user($data, $output) {
     $ret = [];
@@ -62,6 +66,8 @@ function ft_average_user($data, $output) {
     }
     return $ret;
 }
+
+// calculate the difference between the average grade given by peers and the grade given by Moulinette.
 
 function ft_moulinette_variance($data) {
     $flat = ft_average_user($data, false);

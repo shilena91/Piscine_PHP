@@ -1,5 +1,9 @@
 <?php
 
+/*
+** Create a file cookie_crisp.php that will allow you to create, read and erase a cookie.
+*/
+
 $action = $_GET['action'];
 $name = $_GET['name'];
 $value = $_GET['value'];

@@ -1,6 +1,15 @@
 #!/usr/bin/php
 <?php
 
+/*
+** $> ./one_more_time.php "Mardi 12 Novembre 2013 12:02:21"
+** 1384254141
+** $> ./one_more_time.php "Mercreday 1stJuily 99"
+** Wrong Format
+** $> ./one_more_time.php
+** $>
+*/
+
 $status = preg_match('/[\p{L}]+ [0-3][0-9] [\p{L}]+ [0-9]{4} [0-9]{2}:[0-9]{2}:[0-9]{2}/', $argv[1]);
 if (!$status) {
     echo 'Wrong Format' . "\n";

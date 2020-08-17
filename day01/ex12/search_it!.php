@@ -1,6 +1,11 @@
 #!/usr/bin/php
 <?php
 
+/*
+** Your program will take as first argument a string containing a key.
+** It will then search amongst an unlimited number of 'key:value' pairs the value corresponding to the given key and display it.
+*/
+
 if ($argc < 3) {
     return;
 }

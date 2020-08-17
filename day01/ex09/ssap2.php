@@ -1,6 +1,12 @@
 #!/usr/bin/php
 <?php
 
+/*
+** Same with ssap.php, but change the sorting rule:
+** now it will have to be case insensitive and place all the characters in alphabetical order first,
+** then numbers, and finally all the other characters, all following the ASCII order.
+*/
+
 if ($argc < 2) {
     return;
 }
