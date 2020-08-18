@@ -25,7 +25,7 @@ Because the minimum knowledges on openGL is essential in order to code those cla
 
 ## Rush00
 
-A small but complete on line store web site implemented in php.
+A small but complete online store website implemented in php.
 
 function modules:
 
